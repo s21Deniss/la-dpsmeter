@@ -58,7 +58,7 @@ export const useSettingsStore = defineStore("settings", {
           autoMinimizeTimer: 60,
           minimizeToTaskbar: false,
           nameDisplay: "class",
-          nameDisplayV2: "gear",
+          nameDisplayV2: "gear+class",
         },
         design: {
           compactDesign: true,
