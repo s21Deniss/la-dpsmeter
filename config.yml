@@ -1,18 +1,17 @@
-# Steam is correct for the NA/EU regions
+# idk if korea works, never tested it.
 region: Steam
-# update the below p-cap-address to the ip address of your main machine
-p-cap-address: 192.168.86.24
-p-cap-interface: ''
-p-cap-port: 1337
-web-port: 1338
+p-cap-address: 192.168.1.102
+p-cap-interface: ""
+p-cap-port: 2567
+web-port: 2568
 # How often should the overlay gets updated, in milliseconds
 refresh-rate: 250
 # Do you want to have a web overlay, hosted on the web-port.
 web-overlay: true
-# The host is only required if you planning to send the logs to loa-details
+# The host is only required if you planing to send the logs to loa-details
 # Basically it works like Luke aka guy's fork of loa-details
 # For this functionality to work you need to have use-http-brige set to true
 web-host: host.docker.internal
 use-http-bridge: false
 # You can ignore this, it's just for special use cases, where the p-cap-address doesn't match with your lan address
-local-address: ''
+local-address: ""
