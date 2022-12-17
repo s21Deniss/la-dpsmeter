@@ -51,7 +51,7 @@ Get-Service rpcapd
 First, clone the repository so you have the code locally on the machine that will run the meter:
 
 ```powershell
-git clone https://github.com/raxlManu/la-dpsmeter.git
+git clone https://github.com/rexlManu/la-dpsmeter.git
 ```
 
 Second, change `p-cap-address` to the ip address of your main computer in the `config.yml` file in the root directory.
@@ -61,7 +61,7 @@ You can find out your ip address by running `ipconfig` in a command prompt. It's
 Third, make sure Docker is running (first step), navigate to the la-dpsmeter directory, and run the Docker image:
 
 ```bash
-docker run -d --name la-dpsmeter --restart unless-stopped -v ${pwd}/config.yml:/app/config.yml -v ${pwd}/logs:/mnt/raid1/apps/'Lost Ark Logs' -p 1338:1338 ghcr.io/rexlManu/la-dpsmeter:main
+docker run -d --name la-dpsmeter --restart unless-stopped -v ${pwd}/config.yml:/app/config.yml -v ${pwd}/logs:/mnt/raid1/apps/'Lost Ark Logs' -p 1338:1338 ghcr.io/rexlmanu/la-dpsmeter:main
 ```
 
 NOTE1: You need to run the command from the la-dpsmeter directory for it to find the config.yml file to inject.
@@ -92,7 +92,7 @@ You can also use the Docker applications UI to stop/remove containers, if you wo
 To update the image, you have to pull the latest version of the docker image with the following command:
 
 ```bash
-docker pull ghcr.io/rexlManu/la-dpsmeter:main
+docker pull ghcr.io/rexlmanu/la-dpsmeter:main
 ```
 
 Then use the same run command from the third step.
