@@ -188,10 +188,6 @@ namespace LostArkLogger
             BitOffset += Count % 8;
             ByteOffset += Count / 8;
         }
-        internal void Skip(int v)
-        {
-            SkipBits(8 * v);
-        }
         public void Dispose()
         {
             Data = null;
